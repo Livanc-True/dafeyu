@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>大肥鱼的小食堂 · 原创鲸鱼女仆陪伴与互动企划</title>
+  <style>
+    :root {
+      --bg: #fdf8f1;
+      --card: #ffffff;
+      --ink: #223042;
+      --sub: #5f5348;
+      --accent: #2c6ea8;
+      --price: #b65634;
+      --border: #eadbc8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Noto Serif SC", "PingFang SC", "Microsoft YaHei", serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+    .banner {
+      width: 100%;
+      max-height: 340px;
+      object-fit: cover;
+      display: block;
+      border-bottom: 3px solid var(--border);
+    }
+    .wrap {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 36px 20px 64px;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-top: -68px;
+      background: rgba(255, 253, 249, 0.96);
+      padding: 22px 28px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 30px rgba(34, 48, 66, 0.08);
+    }
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      box-shadow: 0 4px 14px rgba(34, 48, 66, 0.14);
+      flex-shrink: 0;
+    }
+    .hero h1 { font-size: 1.75rem; margin-bottom: 6px; }
+    .hero p { color: var(--sub); font-size: 0.98rem; font-family: system-ui, sans-serif; }
+    .cta {
+      margin-left: auto;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-family: system-ui, sans-serif;
+      white-space: nowrap;
+      transition: opacity 0.2s;
+    }
+    .cta:hover { opacity: 0.9; }
+    h2 {
+      font-size: 1.35rem;
+      margin: 42px 0 18px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .intro {
+      color: var(--sub);
+      font-family: system-ui, sans-serif;
+      font-size: 1rem;
+    }
+    .tiers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+      margin-top: 20px;
+    }
+    .tier {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(34, 48, 66, 0.05);
+    }
+    .tier img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; }
+    .tier-body { padding: 18px 20px 22px; }
+    .tier-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+    .tier-title { font-weight: 700; font-size: 1.12rem; }
+    .tier-price { color: var(--price); font-weight: 700; font-size: 1.15rem; }
+    .tier-desc { color: var(--sub); font-size: 0.92rem; font-family: system-ui, sans-serif; }
+    footer {
+      margin-top: 54px;
+      text-align: center;
+      color: #8e7a69;
+      font-size: 0.9rem;
+      font-family: system-ui, sans-serif;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+    @media (max-width: 680px) {
+      .hero { flex-direction: column; text-align: center; margin-top: -40px; }
+      .cta { margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+  <img class="banner" src="./assets/cover-banner.jpg" alt="大肥鱼的小食堂封面" />
+  <main class="wrap">
+    <section class="hero">
+      <img class="avatar" src="./assets/avatar.jpg" alt="大肥鱼头像" />
+      <div>
+        <h1>大肥鱼的小食堂 🐋🍚</h1>
+        <p>原创鲸鱼女仆「大肥鱼」社群日常陪伴与趣味绘画互动企划主页</p>
+      </div>
+      <a class="cta" href="https://afdian.com/a/shenzhidafeiyu" target="_blank" rel="noopener">前往爱发电投喂</a>
+    </section>
+
+    <h2>企划介绍</h2>
+    <p class="intro">
+      「大肥鱼」是一个面向熟人社群持续迭代的原创虚拟角色陪伴与趣味绘画互动企划。平时在群内陪伴大家聊天接梗、制作头像互动表情、把日常照片重绘为插画或小剧场；同时为投喂伙伴提供一对一专属 QQ 好友私聊小灶（私聊照片与成图严格保密不外泄）与加餐画板口粮。
+    </p>
+
+    <h2>小食堂投喂方案</h2>
+    <div class="tiers">
+      <article class="tier">
+        <img src="./assets/tier1-rice.png" alt="添碗热白饭" />
+        <div class="tier-body">
+          <div class="tier-head">
+            <span class="tier-title">添碗热白饭</span>
+            <span class="tier-price">￥9.9 /月</span>
+          </div>
+          <p class="tier-desc">解锁大肥鱼专属 QQ 好友位与一对一私聊小灶（每日 40 轮）+ 群内免好感门槛 + 15 次专属加餐画板口粮。</p>
+        </div>
+      </article>
+      <article class="tier">
+        <img src="./assets/tier2-tea.png" alt="下午茶套餐" />
+        <div class="tier-body">
+          <div class="tier-head">
+            <span class="tier-title">下午茶套餐</span>
+            <span class="tier-price">￥28 /月</span>
+          </div>
+          <p class="tier-desc">专属好友畅聊升级（每日 100 轮）+ 甜点饲主偏爱印象记忆 + 45 次专属加餐画板口粮。</p>
+        </div>
+      </article>
+      <article class="tier">
+        <img src="./assets/tier3-feast.png" alt="海鲜大餐" />
+        <div class="tier-body">
+          <div class="tier-head">
+            <span class="tier-title">海鲜大餐</span>
+            <span class="tier-price">￥68 /月</span>
+          </div>
+          <p class="tier-desc">高配私聊畅玩（每日 250 轮）+ 110 次专属加餐画板口粮 + 额外向指定群注入 ￥10 全群共享加餐池。</p>
+        </div>
+      </article>
+    </div>
+
+    <footer>
+      <p>创作者支持主页：<a href="https://afdian.com/a/shenzhidafeiyu">https://afdian.com/a/shenzhidafeiyu</a></p>
+    </footer>
+  </main>
+</body>
+</html>
